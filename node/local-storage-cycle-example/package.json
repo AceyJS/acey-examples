@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx babel-node --presets @babel/preset-env index.js run"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "acey": "^1.4.3",
+    "acey-node-store": "^1.0.5",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "nodemon": "^1.19.4"
+  }
+}
