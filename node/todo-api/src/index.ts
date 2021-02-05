@@ -61,8 +61,7 @@ initServer().then((server) => {
         t ? res.json(t.to().plain()) : res.sendStatus(404)
         
     })
-    server.listen(PORT, err => {
-        if (err) throw err
+    server.listen(PORT, () => {
         console.log(`> Ready on http://localhost:${PORT}`)
     })
 
