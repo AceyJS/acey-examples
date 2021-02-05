@@ -17,7 +17,7 @@ const Home = () => {
     setLoadingStatus(false)
   }
 
-  const renderList = () => !loading && Adlist.sortByTitle().selectStartingFTitle().map((ad, index) =><div key={index}><AdCase ad={ad} /></div>)
+  const renderList = () => !loading && Adlist.sortByTitle().selectStartingWithPrefixTitle('F').map((ad, index) =><div key={index}><AdCase ad={ad} /></div>)
 
   const renderLoading = () => loading && <p>Loading...</p>
 

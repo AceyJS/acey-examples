@@ -17,7 +17,7 @@ class AdCollection extends Collection {
     }
 
     sortByTitle = () => this.orderBy(['title'], ['asc'])
-    selectStartingFTitle = () => this.filter((o) => o.title.startsWith(''))
+    selectStartingWithPrefixTitle = (prefix) => this.filter((o) => o.title().startsWith(prefix))
 }
 
 export default AdCollection
